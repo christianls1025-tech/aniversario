@@ -10,8 +10,8 @@ const TIMELINE = [
 ];
 // Para fotos reales: pon la ruta en src, por ejemplo "fotos/foto1.jpg"
 const PHOTOS = [
-  {src:"",cap:"Nuestro comienzo"},{src:"",cap:"Aquella tarde"},{src:"",cap:"Mi risa favorita"},
-  {src:"",cap:"Una aventura"},{src:"",cap:"Nosotros"},{src:"",cap:"Siempre juntos"}
+  {src:"img/1.jpeg",cap:"Nuestro comienzo"},{src:"img/2.jpeg",cap:"Aquella tarde"},{src:"img/3.jpeg",cap:"Mi risa favorita"},
+  {src:"img/4.jpeg",cap:"Una aventura"},{src:"img/5.jpeg",cap:"Nosotros"},{src:"img/6.jpeg",cap:"Siempre juntos"}
 ];
 const LETTER = "Mi amor:\n\nHoy celebramos otro año juntos y quiero darte las gracias por cada risa, cada abrazo y cada momento compartido.\n\nContigo aprendí que el amor es sencillo, bonito y verdadero. Gracias por elegirme cada día.\n\nTe amo muchísimo.\n\nSiempre tuyo ❤️";
 const REASONS = `Por tu sonrisa que ilumina mis días|Por cómo me haces reír hasta llorar|Por tu paciencia infinita conmigo|Por ser mi lugar seguro|Por creer en mí cuando yo dudo|Por tu forma de abrazarme|Por cómo me miras|Por tu risa contagiosa|Por cuidar de mí|Por ser mi mejor compañía|Por escucharme sin juzgar|Por tus mensajes que me alegran el día|Por cada “buenos días” tuyo|Por hacerme sentir especial|Por tus ocurrencias|Por tu mirada cuando te emocionas|Por tus manos en las mías|Por animarme siempre|Por soñar conmigo|Por tus abrazos largos|Por tu voz que me calma|Por esperar conmigo lo que viene|Por tu autenticidad|Por tu ternura|Por tus detalles pequeños|Por aguantar mis días malos|Por celebrar mis logros como tuyos|Por tus ganas de vivir|Por tu corazón enorme|Por las noches de película contigo|Por las caminatas sin rumbo|Por los viajes que vamos a hacer|Por las comidas que compartimos|Por tus chistes malos que amo|Por tus besos de sorpresa|Por cómo me tomas de la mano|Por hacerme sentir en casa|Por tu apoyo incondicional|Por tu sinceridad|Por tu forma de ver la vida|Por enseñarme a ser mejor|Por tu valentía|Por tu manera de perdonar|Por no rendirte con nosotros|Por cada primera vez contigo|Por tus bromas a deshoras|Por cómo cantas cuando crees que nadie escucha|Por tus ojos|Por tu olor que reconozco en cualquier lado|Por tus caricias|Por tu energía|Por tu calma en mis tormentas|Por tu compañía en el silencio|Por las risas en medio del caos|Por tus consejos honestos|Por tu cariño con la gente que quiero|Por tu dedicación|Por tu espíritu aventurero|Por tus abrazos de bienvenida|Por las llamadas eternas|Por tus cosquillas|Por tus ideas locas|Por la forma en que dices mi nombre|Por tu humildad|Por tus ganas de crecer juntos|Por tu lealtad|Por los planes que hacemos|Por los domingos perezosos contigo|Por tus ocurrencias en el camino|Por tu generosidad|Por cuidarme cuando estoy mal|Por tu mirada de complicidad|Por las fotos que nos tomamos|Por tus sorpresas|Por cómo celebras la vida|Por tu determinación|Por tu cara cuando duermes|Por tus “te quiero” inesperados|Por darme tu tiempo|Por la paz que siento contigo|Por tu inteligencia|Por tu creatividad|Por tu optimismo|Por hacerme querer ser mejor|Por reírte de mis chistes|Por tu mano en mi espalda cuando la necesito|Por los apodos que solo tú me dices|Por la forma en que me defiendes|Por tu dulzura|Por todo lo que callamos y entendemos|Por tu alegría sencilla|Por cada atardecer a tu lado|Por las canciones que ya son nuestras|Por tu confianza en mí|Por tus ganas de hacerme feliz|Por haberme encontrado|Por elegirme todos los días|Por darle sentido a mis días|Por ser mi hogar|Por ser tú, simplemente tú`.split("|");
@@ -37,7 +37,7 @@ const MOVIE = {
   genre: "Romance · Aventura",
   dur: "Para siempre",
   phrase: "Y de todas las historias, la mejor es la que escribimos juntos.",
-  img: "" // opcional: foto de ustedes, por ejemplo "fotos/nosotros.jpg"
+  img: "img/7.jpeg" // foto de ustedes en el póster
 };
 const KEYS = ["07/11/2024","7/11/2024","07/11","7/11","7 de noviembre","07 de noviembre","7 de noviembre de 2024","07 de noviembre de 2024","7 nov","07 nov","noviembre 7","0711","20241107"];
 const KEYHINT = "Es el día en que empezó nuestra historia 💫 (día y mes)";
@@ -53,6 +53,42 @@ const CERT = {
   date: "7 de noviembre de 2024",
   sign1: "Mi amor",
   sign2: "Tu amor"
+};
+const STARS = [
+  {x:9,  y:64, icon:"💫", title:"La primera chispa",   text:"Fue un día cualquiera, pero algo cambió. Una mirada, una sonrisa… y supe que quería quedarme.", bg:"linear-gradient(135deg,#2b1055,#7597de)"},
+  {x:23, y:30, icon:"💬", title:"Charlas sin fin",      text:"Las horas volaban hablando de todo y de nada. Contigo hasta el silencio es bonito.", bg:"linear-gradient(135deg,#232526,#5f2c82)"},
+  {x:37, y:68, icon:"🏖️", title:"El mar y tú",          text:"Fuimos a la playa: el sol, las olas y tu risa. Ese día guardé el mar entero en un recuerdo.", bg:"linear-gradient(135deg,#0f2027,#2c7a9b)"},
+  {x:51, y:32, icon:"🎬", title:"Noches de película",   text:"Una manta, palomitas y tu mano en la mía. Qué importa la película si la mejor escena eres tú.", bg:"linear-gradient(135deg,#41295a,#b24592)"},
+  {x:65, y:70, icon:"🌅", title:"Atardeceres contigo",  text:"Cada atardecer a tu lado se siente como un pequeño milagro que solo nosotros entendemos.", bg:"linear-gradient(135deg,#ff7e5f,#6a1b4d)"},
+  {x:79, y:30, icon:"🎶", title:"Nuestra canción",      text:"Suena y todo se detiene. Es imposible escucharla sin pensar en ti.", bg:"linear-gradient(135deg,#1d2b64,#c33764)"},
+  {x:91, y:60, icon:"💍", title:"Lo que viene",         text:"Mil planes, mil viajes, mil días más. Lo mejor de nuestra historia todavía no se ha escrito.", bg:"linear-gradient(135deg,#3a1c71,#d76d77)"}
+];
+const PUZZLE = {
+  imgs: ["img/8.jpeg", "img/9.jpeg"],
+  title: "💌 Mensaje escondido",
+  text: "Si estás leyendo esto es porque armaste cada pieza con paciencia, igual que armamos nuestra historia: pieza a pieza. Contigo todo encaja. Te amo.",
+  button: "Con todo mi amor 💖"
+};
+const PLANS = [
+  ["💬","Mejor comunicación","Hablar siempre con sinceridad, escucharnos sin juzgar y resolver todo juntos."],
+  ["🌆","Más salidas","Más citas, paseos y escapadas, aunque sea a un lugar sencillo. Lo importante es estar juntos."],
+  ["🤗","Más abrazos","Abrazos largos, de bienvenida, de buenas noches y de “aquí estoy contigo”."],
+  ["💕","Más cariños","Más detalles, besos, mensajes bonitos y palabras que recuerden cuánto nos queremos."],
+  ["🏡","Más tiempo juntos","Más estadía entre nosotros: tiempo de calidad, sin prisas y sin distracciones."],
+  ["😄","Más risas","Reírnos de todo, hasta de nuestros días malos, porque contigo todo pesa menos."],
+  ["✈️","Más viajes y aventuras","Conocer lugares nuevos y crear recuerdos que podamos contar toda la vida."],
+  ["🌱","Crecer juntos","Apoyar nuestras metas y sueños, y celebrar cada logro como si fuera de los dos."],
+  ["🕊️","Más paciencia y comprensión","Cuidarnos, perdonar a tiempo y elegirnos todos los días, incluso cuando cueste."]
+];
+const STARDONE = {
+  icon: "🌌",
+  title: "Nuestra constelación",
+  text: "Cada estrella eres tú iluminando mi cielo. Unidas forman el dibujo más bonito: nuestra historia. Gracias por brillar a mi lado.",
+  bg: "linear-gradient(135deg,#0b1030,#6a1b4d,#c9184a)"
+};
+const FINALE = {
+  lines: ["Todo empezó un 7 de noviembre de 2024…", "Entre risas, abrazos y pequeñas aventuras…", "fuimos escribiendo la historia más bonita.", "Y lo mejor… todavía está por venir."],
+  dedication: "Gracias por ser mi hogar, mi risa favorita y mi mejor casualidad. Te amo hoy, mañana y siempre."
 };
 /* ================================ */
 
@@ -134,6 +170,7 @@ $("hearts").onclick = rain;
 /* recuerdos (fotos fijas) */
 const ph = i => "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffc2d1"/><stop offset="1" stop-color="#ff8fab"/></linearGradient></defs><rect width="200" height="200" fill="url(#g)"/><text x="100" y="115" font-size="64" text-anchor="middle">❤</text><text x="100" y="165" font-size="16" text-anchor="middle" fill="#fff" font-family="Georgia">Foto ' + (i+1) + '</text></svg>');
 $("gal").innerHTML = PHOTOS.map((p,i) => '<figure class="pol" style="--r:'+((i%2?1:-1)*(1+i%3*1.5))+'deg"><img src="'+(p.src||ph(i))+'" alt="'+p.cap+'"><figcaption>'+p.cap+'</figcaption></figure>').join("");
+document.querySelectorAll("#gal img").forEach((im,i) => { im.onerror = () => { im.onerror = null; im.src = ph(i); }; });
 $("gal").onclick = e => { const im = e.target.closest(".pol img"); if (im){ $("lb").style.display = "flex"; $("lb").querySelector("img").src = im.src; } };
 $("lb").onclick = () => $("lb").style.display = "none";
 
@@ -233,3 +270,202 @@ $("cert").innerHTML = '<div class="diploma"><b class="cn c1">❦</b><b class="cn
  + '<p class="dp">Se otorga con todo cariño a</p><div class="dn">'+CERT.to+'</div><p class="dtx">'+CERT.text+'</p>'
  + '<div class="dfoot"><div><i></i><span>'+CERT.sign1+'</span></div><div class="seal">❤<small>Amor verdadero</small></div><div><i></i><span>'+CERT.sign2+'</span></div></div>'
  + '<small class="dd">Expedido el '+CERT.date+'</small></div>';
+
+/* mapa de estrellas */
+const sky = $("sky"), unlocked = new Set(); let doneT;
+for (let i = 0; i < 70; i++){
+  const d = document.createElement("i"), z = 1 + Math.random()*2;
+  d.className = "tw"; d.style.left = Math.random()*100 + "%"; d.style.top = Math.random()*100 + "%";
+  d.style.width = d.style.height = z + "px"; d.style.animationDelay = Math.random()*3 + "s"; sky.appendChild(d);
+}
+$("skylines").innerHTML = STARS.slice(1).map((s,i) => '<line class="ln" id="ln'+i+'" x1="'+STARS[i].x+'" y1="'+STARS[i].y+'" x2="'+s.x+'" y2="'+s.y+'"/>').join("");
+STARS.forEach((s,i) => {
+  const b = document.createElement("button");
+  b.className = "star"; b.style.left = s.x + "%"; b.style.top = s.y + "%"; b.setAttribute("aria-label","Estrella " + (i+1));
+  b.innerHTML = "<span>★</span><em>" + (i+1) + "</em>"; b.onclick = () => openStar(i, b); sky.appendChild(b);
+});
+$("stcount").textContent = "0/" + STARS.length + " estrellas encendidas";
+function openStar(i, b){
+  unlocked.add(i);
+  document.querySelectorAll(".star").forEach(x => x.classList.remove("cur"));
+  b.classList.add("on","cur");
+  STARS.slice(1).forEach((s,k) => { if (unlocked.has(k) && unlocked.has(k+1)) $("ln"+k).classList.add("lit"); });
+  const s = STARS[i], sc = $("scene");
+  sc.style.background = s.bg; sc.classList.remove("pop"); void sc.offsetWidth; sc.classList.add("pop");
+  showScene(s);
+  clearTimeout(doneT);
+  if (unlocked.size === STARS.length){
+    $("stcount").textContent = "¡Constelación completa! 💖"; rain();
+    doneT = setTimeout(() => { sc.style.background = STARDONE.bg; sc.classList.remove("pop"); void sc.offsetWidth; sc.classList.add("pop"); showScene(STARDONE); rain(); }, 3800);
+  } else $("stcount").textContent = unlocked.size + "/" + STARS.length + " estrellas encendidas";
+}
+function showScene(s){ $("sicon").textContent = s.icon; $("stitle").textContent = s.title; typeInto($("stext"), s.text, 22); }
+
+/* música del final (sintetizada, sin archivos) */
+const AC = window.AudioContext || window.webkitAudioContext;
+const CHORDS = [[220,261.63,329.63],[174.61,220,261.63],[130.81,164.81,196],[196,246.94,293.66]];
+const PAT = [0,1,2,1,2,1,0,1];
+let actx, mg, mtimer, mstep = 0;
+function note(f, t, d, v){
+  const o = actx.createOscillator(), g = actx.createGain();
+  o.type = "triangle"; o.frequency.value = f;
+  g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(v, t + .02); g.gain.exponentialRampToValueAtTime(.0001, t + d);
+  o.connect(g); g.connect(mg); o.start(t); o.stop(t + d + .05);
+}
+function startMusic(){
+  if (!AC) return;
+  clearInterval(mtimer);
+  actx = actx || new AC(); actx.resume();
+  mg = actx.createGain(); mg.gain.setValueAtTime(0, actx.currentTime); mg.gain.linearRampToValueAtTime(.55, actx.currentTime + 2.5);
+  const dl = actx.createDelay(); dl.delayTime.value = .4; const fb = actx.createGain(); fb.gain.value = .38;
+  mg.connect(actx.destination); mg.connect(dl); dl.connect(fb); fb.connect(dl); dl.connect(actx.destination);
+  mstep = 0; let next = actx.currentTime + .15; const beat = .45;
+  mtimer = setInterval(() => {
+    while (next < actx.currentTime + .6){
+      const c = CHORDS[Math.floor(mstep/8) % 4], i = mstep % 8;
+      if (i === 0) note(c[0]/2, next, beat*7, .22);
+      note(c[PAT[i]]*2, next, beat*2.4, .13);
+      if (i === 4) note(c[2]*4, next, beat*3, .06);
+      next += beat; mstep++;
+    }
+  }, 200);
+}
+function stopMusic(){
+  clearInterval(mtimer);
+  if (mg){ const g = mg, t = actx.currentTime; g.gain.cancelScheduledValues(t); g.gain.setValueAtTime(g.gain.value, t); g.gain.linearRampToValueAtTime(0, t + 1.2); setTimeout(() => g.disconnect(), 1500); mg = null; }
+}
+
+/* final cinematográfico */
+const fin = $("fin"); let finId = 0, finShown = false;
+function makeBokeh(){
+  const L = $("finlights"); if (L.dataset.ok) return; L.dataset.ok = 1;
+  for (let i = 0; i < 28; i++){
+    const b = document.createElement("i"), z = 20 + Math.random()*60;
+    b.className = "bokeh"; b.style.width = b.style.height = z + "px"; b.style.left = Math.random()*100 + "%";
+    b.style.animationDuration = (8 + Math.random()*10) + "s"; b.style.animationDelay = (-Math.random()*14) + "s"; L.appendChild(b);
+  }
+}
+function resetFin(){
+  fin.classList.remove("cine","lit"); $("fstart").classList.remove("hide"); $("fline").classList.remove("show");
+  $("fcred").classList.remove("on","done"); $("fded").textContent = "";
+}
+function openFin(direct){
+  if (fin.classList.contains("on")) return;
+  finId++; closeMenu(); resetFin(); fin.classList.add("on"); document.body.style.overflow = "hidden";
+  if (direct) runFinale();
+}
+function runFinale(){
+  const id = ++finId, line = $("fline"), L = FINALE.lines; let i = 0;
+  $("fstart").classList.add("hide"); $("fcred").classList.remove("on","done"); $("fded").textContent = "";
+  fin.classList.add("cine","lit"); makeBokeh(); startMusic();
+  (function next(){
+    if (id !== finId) return;
+    if (i < L.length){
+      line.textContent = L[i++]; line.classList.add("show");
+      setTimeout(() => { if (id !== finId) return; line.classList.remove("show"); setTimeout(next, 1400); }, 3800);
+    } else credits(id);
+  })();
+}
+function credits(id){
+  const c = $("fcred"); $("fttl").textContent = MOVIE.title; $("fcast").textContent = CERT.to; c.classList.add("on"); rain();
+  setTimeout(() => {
+    if (id !== finId) return;
+    typeInto($("fded"), FINALE.dedication, 50);
+    setTimeout(() => { if (id === finId){ c.classList.add("done"); rain(); } }, FINALE.dedication.length*50 + 800);
+  }, 1800);
+}
+function closeFin(){
+  finId++; stopMusic(); fin.classList.remove("on","cine","lit"); $("fline").classList.remove("show"); document.body.style.overflow = "";
+}
+$("fgo").onclick = runFinale;
+$("fagain").onclick = () => { stopMusic(); runFinale(); };
+$("fclose").onclick = closeFin; $("finx").onclick = closeFin;
+$("finalbtn").onclick = () => openFin(true);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && fin.classList.contains("on")) closeFin(); });
+
+/* detectar que ya exploró toda la página */
+const secs = [...document.querySelectorAll("header.hero, section")], seen = new Set(), dwell = new Map();
+const eio = new IntersectionObserver(es => es.forEach(e => {
+  const el = e.target;
+  if (e.isIntersecting && !seen.has(el)){
+    dwell.set(el, setTimeout(() => { seen.add(el); eio.unobserve(el); if (!finShown && seen.size === secs.length){ finShown = true; setTimeout(() => openFin(false), 1800); } }, 1500));
+  } else clearTimeout(dwell.get(el));
+}), {threshold:.2});
+secs.forEach(el => eio.observe(el));
+
+/* rompecabezas secreto (dos, en la misma fila) */
+function makePuzzle(n, src, onSolve){
+  const el = $("puzzle"+n); let pc = 4, pr = 3, order = [], moves = 0, sel = -1, solved = false;
+  const render = () => {
+    el.innerHTML = order.map((id,pos) => '<div class="pz'+(pos === sel ? ' sel' : '')+'" data-pos="'+pos+'" style="background-position:'+(pc > 1 ? (id % pc)/(pc-1)*100 : 0)+'% '+(pr > 1 ? Math.floor(id/pc)/(pr-1)*100 : 0)+'%"></div>').join("");
+    $("pp"+n).textContent = order.filter((id,i) => id === i).length + "/" + order.length;
+  };
+  const mix = () => {
+    const t = pc*pr;
+    do { order = [...Array(t).keys()].sort(() => Math.random() - .5); } while (order.filter((id,i) => id === i).length > 1);
+    moves = 0; sel = -1; solved = false; $("pm"+n).textContent = 0; el.classList.remove("done"); render();
+  };
+  el.onclick = e => {
+    const c = e.target.closest(".pz");
+    if (!c || solved || el.closest(".pcol").classList.contains("locked")) return;
+    const pos = +c.dataset.pos;
+    if (sel < 0){ sel = pos; render(); return; }
+    if (sel === pos){ sel = -1; render(); return; }
+    [order[sel], order[pos]] = [order[pos], order[sel]]; sel = -1; moves++; $("pm"+n).textContent = moves; render();
+    if (order.every((id,i) => id === i)){ solved = true; el.classList.add("done"); onSolve(); }
+  };
+  const start = (img, ar) => {
+    if (ar > 1.1){ pc = 4; pr = 3; } else if (ar < 0.9){ pc = 3; pr = 4; } else { pc = 3; pr = 3; }
+    el.style.setProperty("--img", 'url("' + img + '")'); el.style.setProperty("--ar", ar);
+    el.style.setProperty("--c", pc); el.style.setProperty("--r", pr);
+    el.style.gridTemplateColumns = "repeat(" + pc + ",1fr)"; el.style.gridTemplateRows = "repeat(" + pr + ",1fr)";
+    mix();
+  };
+  const im = new Image();
+  im.onload = () => start(src, im.naturalWidth/im.naturalHeight);
+  im.onerror = () => start("data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffc2d1"/><stop offset="1" stop-color="#ff8fab"/></linearGradient></defs><rect width="400" height="300" fill="url(#g)"/><text x="200" y="185" font-size="140" text-anchor="middle">❤</text><text x="200" y="265" font-size="26" text-anchor="middle" fill="#fff" font-family="Georgia">Foto ' + (n+7) + '</text></svg>'), 4/3);
+  im.src = src;
+  return { mix };
+}
+function showSecret(){
+  const cs = getComputedStyle(document.documentElement);
+  if (window.Swal){
+    Swal.fire({
+      title: PUZZLE.title, text: PUZZLE.text, confirmButtonText: PUZZLE.button, confirmButtonColor: "#d6336c",
+      background: cs.getPropertyValue("--card").trim() || "#fff", color: cs.getPropertyValue("--ink").trim() || "#4a2330",
+      customClass: {title: "swtitle", htmlContainer: "swmsg"}, width: 640
+    });
+  } else alert(PUZZLE.title + "\n\n" + PUZZLE.text);
+}
+function lockSecond(){ $("pcol2").classList.add("locked"); $("plock2").style.display = ""; }
+const pzA = makePuzzle(1, PUZZLE.imgs[0], () => {
+  $("pcol2").classList.remove("locked"); $("plock2").style.display = "none";
+  if (window.Swal) Swal.fire({toast: true, position: "top", icon: "success", title: "¡Segundo rompecabezas desbloqueado! 🔓", timer: 3000, showConfirmButton: false});
+});
+const pzB = makePuzzle(2, PUZZLE.imgs[1], () => {
+  const m = $("secretmsg"); m.classList.add("open"); m.querySelector(".lockico").textContent = "💌";
+  $("secrettext").textContent = "¡Lo lograste! El mensaje escondido ya está desbloqueado."; $("reread").style.display = "";
+  rain(); setTimeout(showSecret, 900);
+});
+$("reread").onclick = showSecret;
+$("pmix").onclick = () => {
+  pzA.mix(); pzB.mix(); lockSecond();
+  const m = $("secretmsg"); m.classList.remove("open"); m.querySelector(".lockico").textContent = "🔒";
+  $("secrettext").textContent = "Arma los dos rompecabezas para descubrir el mensaje escondido…"; $("reread").style.display = "none";
+};
+
+/* planes futuros */
+$("plans").innerHTML = PLANS.map((p,i) => '<div class="plan" data-i="'+i+'"><span class="plic">'+p[0]+'</span><h3>'+p[1]+'</h3><p>'+p[2]+'</p><button class="ghost plbtn">Lo prometo 🤝</button></div>').join("");
+function plUpdate(){
+  const n = document.querySelectorAll(".plan.sealed").length;
+  $("plcount").textContent = n + "/" + PLANS.length + " promesas selladas";
+  $("plmsg").textContent = n === PLANS.length ? "Todas selladas. Gracias por querer construir esto conmigo, un día a la vez. 💖" : "";
+  return n;
+}
+$("plans").onclick = e => {
+  const b = e.target.closest(".plbtn"); if (!b) return;
+  const c = b.closest(".plan"), on = c.classList.toggle("sealed");
+  b.textContent = on ? "✓ Prometido" : "Lo prometo 🤝";
+  if (plUpdate() === PLANS.length && on) rain();
+};
+plUpdate();

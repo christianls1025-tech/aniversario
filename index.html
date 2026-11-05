@@ -13,7 +13,7 @@
   <a class="logo script" href="#inicio">Nuestro amor ♥</a>
   <button class="burger" id="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
   <div class="links" id="links">
-    <a href="#inicio">Inicio</a><a href="#cancion">Canción</a><a href="#tiempo">Tiempo</a><a href="#historia">Historia</a><a href="#recuerdos">Recuerdos</a><a href="#pelicula">Película</a><a href="#carta">Carta</a><a href="#regalo">Regalo</a><a href="#razones">Razones</a><a href="#cupones">Cupones</a><a href="#llave">Llave</a><a href="#juego">Juego</a><a href="#certificado">Certificado</a>
+    <a href="#inicio">Inicio</a><a href="#cancion">Canción</a><a href="#tiempo">Tiempo</a><a href="#historia">Historia</a><a href="#recuerdos">Recuerdos</a><a href="#pelicula">Película</a><a href="#carta">Carta</a><a href="#regalo">Regalo</a><a href="#razones">Razones</a><a href="#cupones">Cupones</a><a href="#llave">Llave</a><a href="#estrellas">Estrellas</a><a href="#rompecabezas">Rompecabezas</a><a href="#juego">Juego</a><a href="#planes">Planes</a><a href="#certificado">Certificado</a><a href="#final">Final</a>
   </div>
 </nav>
 
@@ -30,7 +30,7 @@
 </header>
 
 <section id="cancion">
-  <h2>Nuestra canción</h2>
+  <h2>Una canción más</h2>
   <p class="sub center" style="margin-top:-20px">Dale play y quédate un ratito conmigo 🎶</p>
   <div class="player"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6XP1Uj48uINydteHwaupuA?utm_source=generator&si=49ac3070b67a4e4d" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Nuestra canción"></iframe></div>
 </section>
@@ -57,12 +57,13 @@
 </section>
 
 <section id="carta">
+  <div class="duo">
+    <div class="duocol">
   <h2>Una carta para ti</h2>
   <button class="env" id="env" aria-label="Abrir carta">💌<span>Toca para abrir</span></button>
   <div class="letter" id="letter"></div>
-</section>
-
-<section id="regalo">
+    </div>
+    <div class="duocol" id="regalo">
   <h2>Un regalo para ti</h2>
   <button class="giftbtn" id="giftbtn" aria-label="Abrir regalo">🎁<span>Toca para abrir</span></button>
   <div class="giftreveal" id="giftreveal">
@@ -70,6 +71,8 @@
     <div class="gicon" id="gifticon"></div>
     <h3 id="gifttitle"></h3>
     <p id="gifttext"></p>
+  </div>
+    </div>
   </div>
 </section>
 
@@ -110,6 +113,42 @@
   </div>
 </section>
 
+<section id="estrellas">
+  <h2>Mapa de estrellas</h2>
+  <p class="sub center" style="margin-top:-20px">Toca cada estrella para encender un recuerdo ✨</p>
+  <div class="sky" id="sky"><svg class="skylines" id="skylines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+  <div class="starinfo" id="stcount">0/7 estrellas encendidas</div>
+  <div class="scene" id="scene">
+    <div class="sceneicon" id="sicon">✨</div>
+    <h3 id="stitle">Elige una estrella</h3>
+    <p id="stext">Cada una guarda una pequeña escena de nosotros.</p>
+  </div>
+</section>
+
+<section id="rompecabezas">
+  <h2>Rompecabezas secreto</h2>
+  <p class="sub center" style="margin-top:-20px">Toca dos piezas para intercambiarlas. Arma el primero para desbloquear el segundo… y descubre el mensaje escondido 🧩</p>
+  <div class="pduo">
+    <div class="pcol" id="pcol1">
+      <h3 class="ptitle">Rompecabezas 1</h3>
+      <div class="gstats"><span>Movimientos: <b id="pm1">0</b></span><span>Piezas: <b id="pp1">0/0</b></span></div>
+      <div class="puzzle" id="puzzle1"></div>
+    </div>
+    <div class="pcol locked" id="pcol2">
+      <h3 class="ptitle">Rompecabezas 2</h3>
+      <div class="gstats"><span>Movimientos: <b id="pm2">0</b></span><span>Piezas: <b id="pp2">0/0</b></span></div>
+      <div class="puzzle" id="puzzle2"></div>
+      <div class="plock" id="plock2"><span>🔒</span><small>Arma el primero para desbloquear</small></div>
+    </div>
+  </div>
+  <div class="secretmsg" id="secretmsg">
+    <span class="lockico">🔒</span>
+    <p id="secrettext">Arma los dos rompecabezas para descubrir el mensaje escondido…</p>
+    <button class="ghost" id="reread" style="display:none">Volver a leer el mensaje 💌</button>
+  </div>
+  <div class="center"><button class="ghost" id="pmix">Mezclar de nuevo 🔀</button></div>
+</section>
+
 <section id="juego">
   <h2>Juego de parejas</h2>
   <p class="sub center" style="margin-top:-20px">Encuentra las 8 parejas, ¡como nosotros!</p>
@@ -119,17 +158,54 @@
   <div class="center"><button id="greset">Reiniciar juego 🔄</button></div>
 </section>
 
+<section id="planes">
+  <h2>Nuestros planes futuros</h2>
+  <p class="sub center" style="margin-top:-20px">Lo que quiero que construyamos juntos. Toca “Lo prometo” para sellar cada plan 🤝</p>
+  <div class="plans" id="plans"></div>
+  <div class="starinfo" id="plcount"></div>
+  <p class="plmsg" id="plmsg"></p>
+</section>
+
 <section id="certificado">
   <h2>Certificado de aniversario</h2>
   <div id="cert"></div>
 </section>
 
+<section id="final">
+  <h2>El final… o el comienzo</h2>
+  <div class="center">
+    <p class="sub" style="margin-top:-10px">Al terminar de recorrer todo, el último capítulo se abre solo. También puedes verlo cuando quieras.</p>
+    <button id="finalbtn">🎬 Ver el final cinematográfico</button>
+  </div>
+</section>
+
 <footer>
-  <div class="script fq">“Contigo, cada día es mi favorito.”</div>
-  <div class="fnav"><a href="#inicio">Inicio</a><a href="#cancion">Canción</a><a href="#tiempo">Tiempo</a><a href="#historia">Historia</a><a href="#recuerdos">Recuerdos</a><a href="#pelicula">Película</a><a href="#carta">Carta</a><a href="#regalo">Regalo</a><a href="#razones">Razones</a><a href="#cupones">Cupones</a><a href="#llave">Llave</a><a href="#juego">Juego</a><a href="#certificado">Certificado</a></div>
+  <div class="script fnames">Christian <span>♥</span> Yin Coral</div>
+  <div class="script fq">“Dos corazones, una sola historia, y todo lo bonito apenas comienza.”</div>
   <small>Hecho con ❤️ · Juntos desde el 7 de noviembre de 2024</small>
 </footer>
 <div id="lb"><img alt=""></div>
+<div id="fin" aria-hidden="true">
+  <div class="bar top"></div><div class="bar bot"></div>
+  <div id="finlights"><div class="beam b1"></div><div class="beam b2"></div></div>
+  <button class="finx" id="finx" aria-label="Cerrar">✕</button>
+  <div class="fstart" id="fstart">
+    <div class="fclap">🎬</div>
+    <h3>Has recorrido toda nuestra historia</h3>
+    <p>Hay un último capítulo esperándote…</p>
+    <button id="fgo">▶ Ver el final</button>
+  </div>
+  <div class="fline" id="fline"></div>
+  <div class="fcred" id="fcred">
+    <small>Una historia de amor</small>
+    <h3 id="fttl"></h3>
+    <p class="fcast">Protagonizada por <b id="fcast"></b></p>
+    <p class="fded" id="fded"></p>
+    <div class="fend">Fin ❤</div>
+    <div class="btns"><button id="fagain">Volver a verlo</button><button class="ghost" id="fclose">Cerrar</button></div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
