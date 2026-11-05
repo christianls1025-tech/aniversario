@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Feliz aniversario ❤️</title>
+<link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f495.svg">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +12,7 @@
 <nav id="nav">
   <a class="logo script" href="#inicio">Nuestro amor ♥</a>
   <div class="links">
-    <a href="#inicio">Inicio</a><a href="#tiempo">Tiempo</a><a href="#historia">Historia</a><a href="#recuerdos">Recuerdos</a><a href="#carta">Carta</a><a href="#razones">Razones</a>
+    <a href="#inicio">Inicio</a><a href="#cancion">Canción</a><a href="#tiempo">Tiempo</a><a href="#historia">Historia</a><a href="#recuerdos">Recuerdos</a><a href="#pelicula">Película</a><a href="#carta">Carta</a><a href="#regalo">Regalo</a><a href="#razones">Razones</a><a href="#cupones">Cupones</a><a href="#llave">Llave</a><a href="#juego">Juego</a>
   </div>
 </nav>
 
@@ -26,6 +27,12 @@
   <div class="btns"><button id="hearts">Lluvia de corazones 💕</button><button class="ghost" id="demo">Ver modo aniversario</button></div>
   <a class="scroll" href="#tiempo" aria-label="Bajar">⌄</a>
 </header>
+
+<section id="cancion">
+  <h2>Nuestra canción</h2>
+  <p class="sub center" style="margin-top:-20px">Dale play y quédate un ratito conmigo 🎶</p>
+  <div class="player"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6XP1Uj48uINydteHwaupuA?utm_source=generator&si=49ac3070b67a4e4d" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Nuestra canción"></iframe></div>
+</section>
 
 <section id="tiempo">
   <h2>Tiempo juntos</h2>
@@ -43,10 +50,26 @@
   <div class="polaroids" id="gal"></div>
 </section>
 
+<section id="pelicula">
+  <h2>Nuestra película favorita</h2>
+  <div id="movie"></div>
+</section>
+
 <section id="carta">
   <h2>Una carta para ti</h2>
   <button class="env" id="env" aria-label="Abrir carta">💌<span>Toca para abrir</span></button>
   <div class="letter" id="letter"></div>
+</section>
+
+<section id="regalo">
+  <h2>Un regalo para ti</h2>
+  <button class="giftbtn" id="giftbtn" aria-label="Abrir regalo">🎁<span>Toca para abrir</span></button>
+  <div class="giftreveal" id="giftreveal">
+    <img id="giftimg" alt="" style="display:none">
+    <div class="gicon" id="gifticon"></div>
+    <h3 id="gifttitle"></h3>
+    <p id="gifttext"></p>
+  </div>
 </section>
 
 <section id="razones">
@@ -60,9 +83,44 @@
   <div class="chips" id="rlist"></div>
 </section>
 
+<section id="cupones">
+  <h2>Cupones de amor</h2>
+  <p class="sub center" style="margin-top:-20px">Toca cada cupón para descubrirlo y canjéalo cuando quieras 💌</p>
+  <div class="coupons" id="coupons"></div>
+</section>
+
+<section id="llave">
+  <h2>La llave de mi corazón</h2>
+  <p class="sub center" style="margin-top:-20px">Escribe la fecha en que empezó todo para abrir el candado 🔐</p>
+  <div class="lockbox">
+    <div class="padlock" id="padlock">🔒</div>
+    <div class="lockform">
+      <input id="keyin" type="text" placeholder="Ej. 07 de noviembre" autocomplete="off" aria-label="Fecha especial">
+      <button id="keybtn">Abrir 🔑</button>
+    </div>
+    <small id="keymsg"></small>
+    <button class="ghost" id="keyhint">Dame una pista</button>
+  </div>
+  <div class="keyreveal" id="keyreveal">
+    <img id="keyimg" alt="" style="display:none">
+    <div class="gicon" id="keyicon"></div>
+    <h3 id="keytitle"></h3>
+    <p id="keytext"></p>
+  </div>
+</section>
+
+<section id="juego">
+  <h2>Juego de parejas</h2>
+  <p class="sub center" style="margin-top:-20px">Encuentra las 8 parejas, ¡como nosotros!</p>
+  <div class="gstats"><span>Movimientos: <b id="gm">0</b></span><span>Tiempo: <b id="gt">0s</b></span><span>Parejas: <b id="gp">0/8</b></span></div>
+  <div class="mem" id="mem"></div>
+  <p class="gwin" id="gwin"></p>
+  <div class="center"><button id="greset">Reiniciar juego 🔄</button></div>
+</section>
+
 <footer>
   <div class="script fq">“Contigo, cada día es mi favorito.”</div>
-  <div class="fnav"><a href="#inicio">Inicio</a><a href="#tiempo">Tiempo</a><a href="#historia">Historia</a><a href="#recuerdos">Recuerdos</a><a href="#carta">Carta</a><a href="#razones">Razones</a></div>
+  <div class="fnav"><a href="#inicio">Inicio</a><a href="#cancion">Canción</a><a href="#tiempo">Tiempo</a><a href="#historia">Historia</a><a href="#recuerdos">Recuerdos</a><a href="#pelicula">Película</a><a href="#carta">Carta</a><a href="#regalo">Regalo</a><a href="#razones">Razones</a><a href="#cupones">Cupones</a><a href="#llave">Llave</a><a href="#juego">Juego</a></div>
   <small>Hecho con ❤️ · Juntos desde el 7 de noviembre de 2024</small>
 </footer>
 <div id="lb"><img alt=""></div>
